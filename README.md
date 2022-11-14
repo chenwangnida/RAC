@@ -10,13 +10,13 @@ These instructions will get you a copy of the project and running on your local 
 To run the source code of PMFEA-EDA, the following jar files need to be built in the path of library:
 
 1. Java jar: JAVA_SE 14
-2. Third party jars: ECJ25.
+2. Third party jars: ECJ25 and other related jars are included in the jar fold of this repository.
 
 ## New Benchmark dataset
 
-The two augmented benchmark dataset, i.e.,  Bitbrains and AuverGrid, are created and used in this study ( provided in the project repository /RAC/data/bitbrains and /RAC/data/auvergrid. 
+The augmented benchmark dataset, i.e.,  Bitbrains, is created and used in this study ( provided in the project repository /data/bitbrains. 
 
-We create warm up, training and testing data based on the original dataset. For example, in Auvergrid, first 100 days of Auvergrid data are used to generate dataset for data center warm up , and the following 200 days are used for training (in 200 generations), and the rest days are used for testing. Unlike Auvergrid, 10:1 downsampling is used in Bitbrains. The downsampled bitbrains data are group by every two hours. The first 100 two hours are used for data center warm up, and the following 200 two hours are used for training, and the following 100 two hours are used for testing.
+We create warm up, training and testing data based on the original dataset. For example, in Bitbrains, first 100 two-hour data of Bitbrains are used to generate dataset for data center warm up , and the following 200 two-hour are used for training (in 200 generations), and the rest days are used for testing. Note that, 10:1 downsampling is used in Bitbrains.
 
 
 We also considers  different  number of OS  types in each augmented  benchmark dataset. In particular, we consider 3 types of mixes for operation systems,  i.e., 3OS, 4OS, and 5OS. We use 3OS BitBrains, including data of PM Types, VM Types, Containers, and etc., as an example and demonstrate the data details below.
@@ -24,7 +24,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>PM Types: </li>
  <ul>
-      <li>Location: /RAC/data/bitbrains/3OS/PMConfig</li>
+      <li>Location: /data/bitbrains/3OS/PMConfig</li>
       <li>Columns:  P_CPU(MHz), P_Memory(MB), P_idle(Wh), P_Max(Wh), P_Cores</li>
 </ul>
 </ul>
@@ -32,7 +32,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>VM Types: </li>
  <ul>
-      <li>Location: /RAC/data/bitbrains/3OS/VMConfig</li>
+      <li>Location: /data/bitbrains/3OS/VMConfig</li>
       <li>Columns:  V_CPU(MHz), V_Memory(GB), V_Cores</li>
       <li>Note that the above VM types are created based on AmazonEC2 and convert cpu cores  to Mhz using an equation of VM_Mhz = PM_CPU(MHz)/ PM_Core * VM_Core. These Amazon EC2 are listed below:
 </li>
@@ -54,7 +54,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>Containers: </li>
  <ul>
-      <li>Location: /RAC/data/bitbrains/3OS/containerData</li>
+      <li>Location: /data/bitbrains/3OS/containerData</li>
       <li>Columns:  C_CPU(MHz), C_Memory(GB), C_timestamp(ms)</li>
       <li>Note that we have generated m number of testCase%m%. In particular, the mth testCase is used for trainning in the mth generation.</li>
 </ul>
@@ -65,15 +65,13 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 |          | Number of containers | Average CPU resources required | 
 |----------|-------------|-------------|
 | **Bitbrains** | <br /><img src="jupyter/figures/container_num_bitbrians.png" alt="container numbers" width="300"/> | <br /><img src="jupyter/figures/container_avg_mhz_bitbrains.png" alt="cpu" width="300"/> |
-| **Auvergrid** | <br /><img src="jupyter/figures/container_num_auvergrid.png" alt="container numbers" width="300"/> | <br /><img src="jupyter/figures/container_avg_MHZ_auvergrid.png" alt="cpu" width="300"/> |
-
 
 
 
 <ul>
  <li>OS System Associated With Containers: </li>
  <ul>
-      <li>Location: /RAC/data/bitbrains/3OS/OSData</li>
+      <li>Location: /data/bitbrains/3OS/OSData</li>
       <li>Columns:  OS id</li>
 </ul>
 </ul>
@@ -82,7 +80,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>OS Distribution: </li>
  <ul>
-      <li>Location: /RAC/data/bitbrains/3OS/OSPro</li>
+      <li>Location: /data/bitbrains/3OS/OSPro</li>
       <li>Columns:  OS id</li>
       <li>Note that we consider 3, 4 and 5 different OS and their corresponding distirbution</li>
 
@@ -92,7 +90,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>Data center warm up:</li>
  <ul>
-	  <li>Location: /RAC/data/bitbrains/3OS/InitEnv</li>
+	  <li>Location: /data/bitbrains/3OS/InitEnv</li>
       <li>Note that we have generated m number of initialization testCase%m%, In particular, the mth testCase is used for trainning in the mth generation</li>
 
 </ul>
@@ -102,7 +100,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>Data center warm up: Init running containers: </li>
  <ul>
-       <li>Location: /RAC/data/bitbrains/3OS/InitEnv/testCase0/container.csv</li>
+       <li>Location: /data/bitbrains/3OS/InitEnv/testCase0/container.csv</li>
        <li>For every line, its index is a container id, and its columns list contianer infomation</li>
 
 </ul>
@@ -112,7 +110,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>Data center warm up: allocated containers and their VMs:</li>
  <ul>
-                  <li>Location: /RAC/data/bitbrains/3OS/InitEnv/testCase1/vm.csv</li>
+                  <li>Location: /data/bitbrains/3OS/InitEnv/testCase1/vm.csv</li>
                   <li>For every line, its index is a VM id, and its column lists container ids</li>
 
 </ul>
@@ -122,7 +120,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>Data center warm up: OS types of the running VMs:</li>
  <ul>
-                  <li>Location: /RAC/data/bitbrains/3OS/InitEnv/testCase1/os.csv</li>
+                  <li>Location: /data/bitbrains/3OS/InitEnv/testCase1/os.csv</li>
                   <li>For every line, its index is a VM id, and its column shows its os id. Note that any containers runing in the same VM have same OS</li>
 
 </ul>
@@ -132,7 +130,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>Data center warm up: VM Types:</li>
  <ul>
-                  <li>Location: /RAC/data/bitbrains/3OS/InitEnv/testCase0/vmType.csv</li>
+                  <li>Location: /data/bitbrains/3OS/InitEnv/testCase0/vmType.csv</li>
                   <li>For every line, its index is a VM id, and its column lists its VM type id</li> 
 
 </ul>
@@ -144,7 +142,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>Data center warm up: allocated VM and their PMs:</li>
  <ul>
-                  <li>Location: /RAC/data/bitbrains/3OS/InitEnv/testCase0/pm.csv</li>
+                  <li>Location: /data/bitbrains/3OS/InitEnv/testCase0/pm.csv</li>
                   <li>For every line, its index is a PM id, and its column lists hosted VM ids running in the PM</li> 
 </ul>
 </ul>
@@ -155,7 +153,7 @@ We also considers  different  number of OS  types in each augmented  benchmark d
 <ul>
  <li>Data center warm up: PM Types:</li>
  <ul>
-                  <li>Location: /RAC/data/bitbrains/3OS/InitEnv/testCase0/pmType.csv</li>
+                  <li>Location: /data/bitbrains/3OS/InitEnv/testCase0/pmType.csv</li>
                   <li>For every line, its index is a PM id, and its column lists its VM type id</li> 
 
 </ul>
