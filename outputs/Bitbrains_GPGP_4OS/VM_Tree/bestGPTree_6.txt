@@ -1,0 +1,1 @@
+(((coMem - leftVmMem) * ((leftVmMem - (vmMemOverhead - vmCpuOverhead)) - (vmMemOverhead - vmCpuOverhead))) + ((vmMemOverhead - vmCpuOverhead) + ((vmCpuOverhead / vmMemOverhead) / (vmMemOverhead - vmCpuOverhead)))) + ((((leftVmMem - (vmMemOverhead - vmCpuOverhead)) - leftVmCpu) * (coMem - leftVmMem)) - leftVmCpu)

@@ -1,0 +1,2612 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=194.61955753335786 Adjusted=0.005111963305762389 Hits=0
+c style: 
+coMem - vmCpuOverhead
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=366.7726111575566 Adjusted=0.002719071430720523 Hits=0
+c style: 
+PmUSedCPU * VmCPU
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=192.42563453171562 Adjusted=0.005169945557738532 Hits=0
+c style: 
+coCpu * coMem
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=191.42711253926115 Adjusted=0.005196772880931572 Hits=0
+c style: 
+NoOfCore - pmMem
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=677.9953750754419 Adjusted=0.0014727640816241082 Hits=0
+c style: 
+coMem / coMem
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=669.075007959655 Adjusted=0.0014923702393332804 Hits=0
+c style: 
+(vmMem * NoOfCore) - PmUsedMem
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=183.11426661789733 Adjusted=0.005431409626041398 Hits=0
+c style: 
+((coMem - vmMemOverhead) * (coMem - (leftVmMem - coMem))) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=185.4290982304019 Adjusted=0.005363969517055386 Hits=0
+c style: 
+(vmMem * NoOfCore) - PmUsedMem
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=184.5240713951063 Adjusted=0.005390136128860192 Hits=0
+c style: 
+((coMem - vmMemOverhead) * (coMem - (vmCpuOverhead / vmCpuOverhead))) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=184.57154063156108 Adjusted=0.0053887573309822755 Hits=0
+c style: 
+(vmMem * NoOfCore) - PmUsedMem
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1799.0478895834647 Adjusted=5.555407752131541E-4 Hits=0
+c style: 
+coMem - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1799.0478895834647 Adjusted=5.555407752131541E-4 Hits=0
+c style: 
+(NoOfCore - pmMem) - pmMem
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1851.0144161683536 Adjusted=5.399526004062687E-4 Hits=0
+c style: 
+((coMem - vmMemOverhead) * (coMem - (coCpu - coCpu))) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1851.0130940603444 Adjusted=5.399529858655615E-4 Hits=0
+c style: 
+(NoOfCore - (((PmCPU / NoOfCore) / PmCPU) + (VmCPU * (VmCPU - (PmCPU * PmUsedMem))))) - PmUsedMem
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=192.55812390705572 Adjusted=0.005166406761000577 Hits=0
+c style: 
+(((coMem - vmMemOverhead) * (coMem - (leftVmMem - coMem))) - coCpu) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=192.58055748688398 Adjusted=0.005165808038690842 Hits=0
+c style: 
+vmMem * (((NoOfCore / vmMem) / PmUsedMem) * (PmUSedCPU * NoOfCore))
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.47879727684804 Adjusted=0.005450221032848373 Hits=0
+c style: 
+((leftVmMem * vmMemOverhead) * coMem) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.56535877933567 Adjusted=0.005447650943782385 Hits=0
+c style: 
+(NoOfCore - (((PmCPU / NoOfCore) / PmCPU) + (VmCPU * (VmCPU - (PmCPU * PmUsedMem))))) - PmUsedMem
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.0554339701111 Adjusted=0.005680029167232463 Hits=0
+c style: 
+((leftVmMem * vmMemOverhead) * coMem) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=175.0554339701111 Adjusted=0.005680029167232463 Hits=0
+c style: 
+vmMem * (((NoOfCore / vmMem) / PmUsedMem) * (PmUSedCPU * NoOfCore))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=186.38930846042172 Adjusted=0.005336483752546688 Hits=0
+c style: 
+((coMem - vmMemOverhead) * (((vmCpuOverhead / vmCpuOverhead) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=186.39077927164394 Adjusted=0.005336441867026915 Hits=0
+c style: 
+(NoOfCore - (((PmCPU / NoOfCore) / PmCPU) + (VmCPU * (VmCPU - (PmCPU * PmUsedMem))))) - PmUsedMem
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1611.4248556322714 Adjusted=6.201839400496437E-4 Hits=0
+c style: 
+((coMem - vmMemOverhead) * (((vmCpuOverhead / vmCpuOverhead) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1611.4248556322714 Adjusted=6.201839400496437E-4 Hits=0
+c style: 
+(NoOfCore - (((PmCPU * PmUsedMem) / PmCPU) + (VmCPU * (VmCPU - (PmCPU * PmUsedMem))))) - pmMem
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=184.71531186819254 Adjusted=0.005384585632388398 Hits=0
+c style: 
+(((coMem + coMem) - (leftVmMem * vmMemOverhead)) * ((((coCpu * coMem) - (vmCpuOverhead / leftVmCpu)) - (leftVmMem * vmMemOverhead)) - coCpu)) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=184.7374690203382 Adjusted=0.005383943289818923 Hits=0
+c style: 
+vmMem * ((VmCPU / PmUsedMem) * (PmUSedCPU * NoOfCore))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=177.90912020060128 Adjusted=0.0055894299791914084 Hits=0
+c style: 
+((((leftVmMem * vmMemOverhead) * coMem) - (vmCpuOverhead / leftVmCpu)) * coMem) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=177.91684884245961 Adjusted=0.005589188533498725 Hits=0
+c style: 
+(((NoOfCore / vmMem) / PmUsedMem) * PmUSedCPU) - pmMem
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=179.55089371488285 Adjusted=0.00553860454204758 Hits=0
+c style: 
+((coMem - vmMemOverhead) * (((vmCpuOverhead / vmCpuOverhead) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (coMem - vmMemOverhead)))) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=179.5513504319297 Adjusted=0.005538590531766825 Hits=0
+c style: 
+((NoOfCore / vmMem) / PmUsedMem) * ((vmMem * (((NoOfCore / vmMem) / PmUsedMem) * (PmUSedCPU * (NoOfCore - PmUsedMem)))) * (((NoOfCore / vmMem) / PmUsedMem) * (NoOfCore - pmMem)))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=652.1840217189899 Adjusted=0.0015309621282043788 Hits=0
+c style: 
+(coMem * (((leftVmMem * vmMemOverhead) * coMem) - (vmCpuOverhead / (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=652.5889361287675 Adjusted=0.0015300136595381168 Hits=0
+c style: 
+(NoOfCore - (((PmCPU / NoOfCore) / ((NoOfCore / vmMem) / PmUsedMem)) + (VmCPU * (VmCPU - (PmCPU * PmUsedMem))))) - PmUsedMem
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1959.5899132551058 Adjusted=5.1005056857593E-4 Hits=0
+c style: 
+(((((coMem - vmMemOverhead) * (leftVmMem * vmMemOverhead)) * coMem) - (vmCpuOverhead / leftVmCpu)) * (((vmCpuOverhead / vmCpuOverhead) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (coMem - vmMemOverhead)))) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1961.8253646464818 Adjusted=5.094696746901408E-4 Hits=0
+c style: 
+(((NoOfCore - pmMem) / PmUsedMem) * (vmMem * (((NoOfCore / vmMem) / PmUsedMem) * (PmUSedCPU * NoOfCore)))) - pmMem
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=183.39498140178026 Adjusted=0.005423141087669241 Hits=0
+c style: 
+((((vmCpuOverhead * leftVmMem) - (leftVmMem * vmMemOverhead)) * (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * coMem)) - (vmCpuOverhead / leftVmCpu)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=183.66845386387027 Adjusted=0.0054151100476379005 Hits=0
+c style: 
+vmMem * ((((NoOfCore - pmMem) / PmUsedMem) * (PmUSedCPU * NoOfCore)) * ((NoOfCore / PmUsedMem) * (NoOfCore - pmMem)))
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1730.5613139264933 Adjusted=5.775134798619387E-4 Hits=0
+c style: 
+((coMem * ((leftVmMem * vmMemOverhead) * coMem)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - vmMemOverhead) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1731.2783952960847 Adjusted=5.772744165807586E-4 Hits=0
+c style: 
+((NoOfCore / PmUsedMem) * (((NoOfCore - pmMem) / PmUsedMem) * (PmUSedCPU * NoOfCore))) * ((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore))
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=189.5192264106463 Adjusted=0.005248814089999473 Hits=0
+c style: 
+((coMem * (leftVmMem * coMem)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - vmMemOverhead) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=189.52027623769297 Adjusted=0.005248785167371901 Hits=0
+c style: 
+vmMem * ((vmMem * (((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore)) * NoOfCore)) * (((NoOfCore - pmMem) / PmUsedMem) * (((NoOfCore - pmMem) / PmUsedMem) * PmUSedCPU)))
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=185.811364195662 Adjusted=0.005352993402224838 Hits=0
+c style: 
+((coMem * ((leftVmMem * vmMemOverhead) * coMem)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=185.85056831605576 Adjusted=0.005351870261954519 Hits=0
+c style: 
+vmMem * ((((PmCPU / NoOfCore) / PmCPU) / PmUsedMem) * ((PmUsedMem / PmUsedMem) * (((NoOfCore / PmUsedMem) / PmUsedMem) * (PmUSedCPU * NoOfCore))))
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1727.5945234139065 Adjusted=5.785046674942827E-4 Hits=0
+c style: 
+((coMem * (vmCpuOverhead / leftVmCpu)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((coMem * coMem) * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1729.1190147028906 Adjusted=5.779949191366628E-4 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * ((((NoOfCore - pmMem) / PmUsedMem) * NoOfCore) * (PmUSedCPU * NoOfCore))
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=641.5271049326406 Adjusted=0.001556354576052998 Hits=0
+c style: 
+(((coMem - (vmMemOverhead / (coMem * leftVmCpu))) * (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((coMem * coMem) * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=641.5864485716841 Adjusted=0.0015562108448174729 Hits=0
+c style: 
+((VmCPU - (PmCPU * PmUsedMem)) / PmUsedMem) * ((vmMem * (((NoOfCore / vmMem) / PmUsedMem) * (PmUSedCPU * (NoOfCore - PmUsedMem)))) * (NoOfCore / PmUsedMem))
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=192.92130754310904 Adjusted=0.005156730906312078 Hits=0
+c style: 
+((((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - vmMemOverhead) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=193.34313569407567 Adjusted=0.005145538052726211 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * (PmUSedCPU * (((PmUSedCPU * NoOfCore) / (NoOfCore / vmMem)) * (PmUsedMem - pmMem)))
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.05823310369206 Adjusted=0.0056799388609735475 Hits=0
+c style: 
+(((leftVmMem * vmMemOverhead) - vmMemOverhead) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=175.07247141906743 Adjusted=0.005679479545782686 Hits=0
+c style: 
+vmMem * (((vmMem * ((VmCPU / PmUsedMem) * (PmUSedCPU * NoOfCore))) * NoOfCore) * (((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore)) * ((PmUSedCPU / PmUsedMem) * PmUSedCPU)))
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=172.57270082652832 Adjusted=0.005761274643063934 Hits=0
+c style: 
+((coMem * (((vmCpuOverhead / leftVmCpu) * coMem) * coMem)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * coMem)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=172.59678201186665 Adjusted=0.0057604754443641845 Hits=0
+c style: 
+((NoOfCore - pmMem) * (PmUSedCPU * NoOfCore)) * (((vmMem * ((NoOfCore - PmUsedMem) * VmCPU)) * (NoOfCore - pmMem)) * (PmUSedCPU * NoOfCore))
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.94445711081477 Adjusted=0.005651490961221415 Hits=0
+c style: 
+(((coMem * ((leftVmMem * vmMemOverhead) * coMem)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem * coMem) * coMem) * coMem))) - (leftVmCpu * (coMem * (vmCpuOverhead / leftVmCpu)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=175.9443657315789 Adjusted=0.005651493879816327 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * ((NoOfCore / PmUsedMem) * ((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore)))
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2082.2636419779337 Adjusted=4.800160574254347E-4 Hits=0
+c style: 
+((coMem * (((leftVmMem * vmMemOverhead) * coMem) * coMem)) - ((vmCpuOverhead / leftVmCpu) / leftVmCpu)) - (leftVmCpu * leftVmMem)
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2083.0197142631355 Adjusted=4.798419099185818E-4 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore)
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=186.1326420158021 Adjusted=0.005343803139997118 Hits=0
+c style: 
+((((leftVmMem * vmMemOverhead) - vmMemOverhead) * (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * coMem)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=186.22136243029604 Adjusted=0.005341270819841981 Hits=0
+c style: 
+((NoOfCore / PmUsedMem) / PmUsedMem) * (PmUSedCPU * (((PmUSedCPU * VmCPU) / PmUsedMem) * ((NoOfCore / vmMem) * (NoOfCore - pmMem))))
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=201.76259558258457 Adjusted=0.0049318761043020045 Hits=0
+c style: 
+((((coMem * (leftVmMem * vmMemOverhead)) - vmMemOverhead) * (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coCpu * coMem)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=201.81827141047313 Adjusted=0.004930522250513382 Hits=0
+c style: 
+vmMem * (((NoOfCore - pmMem) * (NoOfCore - pmMem)) * ((PmUSedCPU / PmUsedMem) * (NoOfCore - pmMem)))
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1598.0899321939937 Adjusted=6.253556975547795E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1601.1907360179935 Adjusted=6.241454138508822E-4 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * (((NoOfCore / vmMem) / PmUsedMem) * ((PmUSedCPU * PmCPU) + NoOfCore))
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1722.365227180629 Adjusted=5.802600541244344E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1722.365227180629 Adjusted=5.802600541244344E-4 Hits=0
+c style: 
+((VmCPU - (PmCPU * PmUsedMem)) / PmUsedMem) * ((NoOfCore / PmUsedMem) * (((PmUsedMem / PmUsedMem) / PmUsedMem) * (PmUSedCPU * NoOfCore)))
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=178.0036972725361 Adjusted=0.005586476789233484 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=178.0036972725361 Adjusted=0.005586476789233484 Hits=0
+c style: 
+(vmMem * ((NoOfCore - pmMem) * (PmUSedCPU * ((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem))))) * ((NoOfCore / PmUsedMem) / PmUsedMem)
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=180.4804035714904 Adjusted=0.005510236809706404 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=180.4804035714904 Adjusted=0.005510236809706404 Hits=0
+c style: 
+vmMem * ((NoOfCore - pmMem) * (PmUSedCPU * ((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem))))
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=191.54433052494738 Adjusted=0.005193609166645564 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=191.55247319148526 Adjusted=0.005193389539097441 Hits=0
+c style: 
+(((((vmMem * vmMem) / PmUsedMem) / PmUsedMem) * ((NoOfCore / PmUsedMem) * (vmMem * (PmUSedCPU * NoOfCore)))) / PmUsedMem) * (PmUSedCPU * (PmUSedCPU * NoOfCore))
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=172.30950624456153 Adjusted=0.0057700239396497625 Hits=0
+c style: 
+((((leftVmMem * leftVmMem) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=172.3314146493944 Adjusted=0.0057692946314593175 Hits=0
+c style: 
+((PmUSedCPU * NoOfCore) / PmUsedMem) * ((PmUSedCPU * NoOfCore) * (((NoOfCore / vmMem) / PmUsedMem) * (NoOfCore / PmUsedMem)))
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=638.8095542815573 Adjusted=0.001562965093765911 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=639.1627322548136 Adjusted=0.0015621028054503413 Hits=0
+c style: 
+((NoOfCore / vmMem) / PmUsedMem) * ((PmUSedCPU * VmCPU) / PmUsedMem)
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=174.24408336016387 Adjusted=0.005706326746249043 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - ((vmCpuOverhead / leftVmCpu) / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=174.24521862717114 Adjusted=0.005706289779736984 Hits=0
+c style: 
+(((PmUsedMem / ((NoOfCore / vmMem) / PmUsedMem)) / PmUsedMem) * (((PmUSedCPU * NoOfCore) / PmUsedMem) * (NoOfCore / PmUsedMem))) * ((NoOfCore - pmMem) * (NoOfCore - pmMem))
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=194.8017630142741 Adjusted=0.00510720631216737 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=194.80728949839664 Adjusted=0.005107062165876049 Hits=0
+c style: 
+((VmCPU / PmUsedMem) * (((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore)) * (((NoOfCore - PmUsedMem) / PmUsedMem) * (PmUSedCPU * NoOfCore)))) / PmUsedMem
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=184.92323091414582 Adjusted=0.005378564018510264 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=184.93015785330334 Adjusted=0.005378363636893096 Hits=0
+c style: 
+((NoOfCore / PmUsedMem) / PmUsedMem) * ((((PmUSedCPU * NoOfCore) / PmUsedMem) / ((NoOfCore - pmMem) * (NoOfCore - pmMem))) * ((((NoOfCore / PmUsedMem) * (NoOfCore - PmUsedMem)) * NoOfCore) / PmUsedMem))
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=177.60165437617553 Adjusted=0.005599052279178633 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=177.6055684703063 Adjusted=0.005598929577418259 Hits=0
+c style: 
+((((PmUSedCPU * NoOfCore) / PmUsedMem) * (PmUSedCPU * NoOfCore)) * ((NoOfCore / vmMem) / PmUsedMem)) * NoOfCore
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=194.38621897865207 Adjusted=0.005118068230335427 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((coMem * coCpu) / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=194.402531026275 Adjusted=0.0051176409780768605 Hits=0
+c style: 
+(((PmUsedMem / (NoOfCore / PmUsedMem)) / PmUsedMem) * ((((NoOfCore / PmUsedMem) * (PmUSedCPU * VmCPU)) / PmUsedMem) * (NoOfCore / PmUsedMem))) * ((VmCPU / PmUsedMem) * ((((NoOfCore / vmMem) / PmUsedMem) * ((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore))) - (NoOfCore / vmMem)))
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=188.38100407096434 Adjusted=0.005280360640739251 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=188.38871491014552 Adjusted=0.005280145654266912 Hits=0
+c style: 
+(pmMem / pmMem) * (((((NoOfCore / vmMem) / PmUsedMem) / PmUsedMem) * ((PmUSedCPU * NoOfCore) / PmUsedMem)) * (PmUSedCPU / PmUsedMem))
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=661.8491143688218 Adjusted=0.001508638962205177 Hits=0
+c style: 
+(((coMem - (leftVmMem * vmMemOverhead)) * coMem) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=662.4576596818873 Adjusted=0.001507255188642297 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * ((VmCPU / PmUsedMem) * (((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore)) * (((NoOfCore - PmUsedMem) / PmUsedMem) * (PmUSedCPU * NoOfCore))))
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=177.2619384739108 Adjusted=0.005609722459886485 Hits=0
+c style: 
+((coCpu - (((coCpu - vmCpuOverhead) * (leftVmCpu + vmCpuOverhead)) * ((vmCpuOverhead + coCpu) - (coMem + vmCpuOverhead)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=177.5716777113526 Adjusted=0.005599992186982883 Hits=0
+c style: 
+(PmUSedCPU * NoOfCore) * (((((VmCPU / PmUsedMem) * (PmUSedCPU * NoOfCore)) * (NoOfCore / PmUsedMem)) + PmCPU) * ((NoOfCore + (PmUsedMem / PmCPU)) + (PmUSedCPU * NoOfCore)))
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=193.4521632781624 Adjusted=0.005142652995685665 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=193.57222143115163 Adjusted=0.005139479791332108 Hits=0
+c style: 
+(PmUSedCPU * ((NoOfCore / vmMem) / PmUsedMem)) * (NoOfCore / PmUsedMem)
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2439.3827694372667 Adjusted=4.097717835594259E-4 Hits=0
+c style: 
+((leftVmMem * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * coMem)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2439.708358279813 Adjusted=4.097171202809294E-4 Hits=0
+c style: 
+((PmUSedCPU * NoOfCore) / PmUsedMem) * ((VmCPU + PmUSedCPU) / PmUsedMem)
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=179.36771394027195 Adjusted=0.005544229497365288 Hits=0
+c style: 
+((((vmCpuOverhead / leftVmCpu) * coMem) * (coMem - (leftVmMem * vmMemOverhead))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=179.41830737771514 Adjusted=0.0055426747680680085 Hits=0
+c style: 
+((NoOfCore - pmMem) / PmUsedMem) * PmUSedCPU
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1895.5249677633456 Adjusted=5.272801660920623E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * coMem)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1895.5472997246593 Adjusted=5.272739573356172E-4 Hits=0
+c style: 
+((PmUSedCPU * ((NoOfCore / PmUsedMem) / PmUsedMem)) / PmUsedMem) * (((PmUSedCPU / PmUsedMem) * ((NoOfCore * (PmUSedCPU * NoOfCore)) / PmUsedMem)) * ((NoOfCore / PmUsedMem) * (NoOfCore * ((NoOfCore / PmUsedMem) * (NoOfCore / PmUsedMem)))))
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=177.58096831090538 Adjusted=0.005599700849751373 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=177.65213900800023 Adjusted=0.005597470064185568 Hits=0
+c style: 
+(NoOfCore * (PmUSedCPU * (NoOfCore / PmUsedMem))) * (((PmUSedCPU * NoOfCore) / PmUsedMem) * ((NoOfCore / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem))))
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=181.9747016890108 Adjusted=0.005465236400273681 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (coMem - (leftVmMem * vmMemOverhead)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) * coMem)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=181.98942824853734 Adjusted=0.005464796570880554 Hits=0
+c style: 
+(((NoOfCore - pmMem) / PmUsedMem) * (((NoOfCore * VmCPU) / PmUsedMem) * ((NoOfCore / PmUsedMem) * ((NoOfCore - pmMem) / PmUsedMem)))) * (((NoOfCore / PmUsedMem) * (((NoOfCore - pmMem) / PmUsedMem) * (NoOfCore / PmUsedMem))) * (PmUSedCPU * NoOfCore))
+
+Generation: 51
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1851.9210814981986 Adjusted=5.396883925522826E-4 Hits=0
+c style: 
+(((coMem - (leftVmMem * vmMemOverhead)) * (vmMemOverhead - (leftVmMem * vmMemOverhead))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1852.2648548026561 Adjusted=5.395882824888969E-4 Hits=0
+c style: 
+((((NoOfCore / PmUsedMem) * ((VmCPU / PmUsedMem) * PmUSedCPU)) * (VmCPU / PmUsedMem)) * (vmMem * ((NoOfCore * VmCPU) / PmUsedMem))) * (((VmCPU * (PmUSedCPU / PmUsedMem)) / (PmUSedCPU * NoOfCore)) * (((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem)) - (PmUSedCPU * NoOfCore)))
+
+Generation: 52
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2076.5821500606626 Adjusted=4.8132874070505534E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2078.545732088657 Adjusted=4.8087425276077895E-4 Hits=0
+c style: 
+((((NoOfCore - pmMem) / PmUsedMem) / PmUsedMem) / PmUsedMem) * (((PmUSedCPU * ((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore))) / PmUsedMem) / PmUsedMem)
+
+Generation: 53
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=3290.967944993884 Adjusted=3.037696650481382E-4 Hits=0
+c style: 
+(((leftVmMem * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (coMem - (leftVmMem * vmMemOverhead)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) * coMem)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=3291.786046187413 Adjusted=3.036941926906732E-4 Hits=0
+c style: 
+((((NoOfCore * (PmUSedCPU * NoOfCore)) / PmUsedMem) / PmUsedMem) / PmUsedMem) * (PmUSedCPU / (((NoOfCore / PmUsedMem) + PmCPU) * ((NoOfCore + PmCPU) + (pmMem - pmMem))))
+
+Generation: 54
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=180.86797326465228 Adjusted=0.005498494221106269 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * coCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=181.02799962028234 Adjusted=0.0054936603274553355 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * ((NoOfCore / PmUsedMem) * ((PmUSedCPU * ((NoOfCore / PmUsedMem) * (NoOfCore - pmMem))) + PmCPU))
+
+Generation: 55
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187.7172907092015 Adjusted=0.005298931519427763 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmCpu * coMem))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=187.71624440877662 Adjusted=0.005298960898320489 Hits=0
+c style: 
+((PmUSedCPU + (PmUsedMem / PmCPU)) / PmUsedMem) * ((PmUSedCPU * NoOfCore) * ((VmCPU / PmUsedMem) * (PmUSedCPU * NoOfCore)))
+
+Generation: 56
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=188.46305740775756 Adjusted=0.005278073803315786 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=188.4830026446416 Adjusted=0.00527751822613562 Hits=0
+c style: 
+(((((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * ((PmUsedMem / PmUsedMem) * PmUSedCPU)) * (VmCPU / PmUsedMem)) * (vmMem * ((NoOfCore * VmCPU) / PmUsedMem))) * ((NoOfCore / PmUsedMem) * (((NoOfCore - pmMem) / PmUsedMem) * (PmUSedCPU * NoOfCore)))
+
+Generation: 57
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187.9458472362013 Adjusted=0.0052925217178755955 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (leftVmMem * (vmCpuOverhead / leftVmCpu))) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=187.9508956011301 Adjusted=0.005292380312983386 Hits=0
+c style: 
+((NoOfCore * ((PmUSedCPU * NoOfCore) / PmUsedMem)) / PmUsedMem) * ((PmUSedCPU * (((NoOfCore - vmMem) / PmUsedMem) * NoOfCore)) * (VmCPU * (NoOfCore / PmUsedMem)))
+
+Generation: 58
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=185.50852491637278 Adjusted=0.005361685212235649 Hits=0
+c style: 
+(((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=185.52310722035855 Adjusted=0.005361266037770855 Hits=0
+c style: 
+((NoOfCore / PmUsedMem) * ((((NoOfCore / PmUsedMem) / PmUsedMem) * (PmUSedCPU * (NoOfCore - PmUsedMem))) * (NoOfCore / PmUsedMem))) * ((((NoOfCore / PmUsedMem) * (PmUSedCPU * VmCPU)) * ((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem))) * (((NoOfCore / PmUsedMem) * PmUSedCPU) - (PmUSedCPU * NoOfCore)))
+
+Generation: 59
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=189.89539997420954 Adjusted=0.005238470912002607 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((vmMemOverhead + coMem) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=189.93773663692136 Adjusted=0.005237309384794663 Hits=0
+c style: 
+((NoOfCore / PmUsedMem) * ((NoOfCore + PmCPU) + (pmMem - pmMem))) * ((VmCPU / PmUsedMem) * PmUsedMem)
+
+Generation: 60
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1956.775226959701 Adjusted=5.107838664160317E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1957.0734838023068 Adjusted=5.107060630115571E-4 Hits=0
+c style: 
+(PmUsedMem / PmUsedMem) * ((pmMem / pmMem) * ((PmUSedCPU / PmUsedMem) * (VmCPU / PmUsedMem)))
+
+Generation: 61
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.67364394172282 Adjusted=0.005444439270324961 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) - vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.67899604141928 Adjusted=0.005444280628442143 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) / vmMem) * (PmUsedMem * ((NoOfCore * VmCPU) / PmUsedMem))) * (PmUsedMem * ((NoOfCore * VmCPU) / PmUsedMem))
+
+Generation: 62
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=197.3198785597797 Adjusted=0.005042358876286672 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=197.32529463512716 Adjusted=0.005042221174257018 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * ((((PmUsedMem / PmUsedMem) * (PmUSedCPU * NoOfCore)) * (((PmUSedCPU * NoOfCore) / PmUsedMem) * ((VmCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)))) * (PmUSedCPU * NoOfCore))
+
+Generation: 63
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187.80369488863207 Adjusted=0.0052965065148214445 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (leftVmMem * (vmCpuOverhead / leftVmCpu))) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * leftVmMem)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=187.85597889234623 Adjusted=0.005295040198700996 Hits=0
+c style: 
+(((VmCPU * (PmUSedCPU / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) / PmUsedMem) * (NoOfCore / (PmUSedCPU / PmUsedMem)))) / vmMem) / PmUsedMem
+
+Generation: 64
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=193.36832458589527 Adjusted=0.005144871223901917 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=193.4003401948868 Adjusted=0.00514402391990414 Hits=0
+c style: 
+(((PmUsedMem * (PmUSedCPU / PmUsedMem)) / PmUsedMem) / PmUsedMem) * (((PmUSedCPU * NoOfCore) / PmUsedMem) * (PmUSedCPU * NoOfCore))
+
+Generation: 65
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=184.9252194606504 Adjusted=0.005378506492561339 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (leftVmMem * (leftVmMem / leftVmMem))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=184.95128394359736 Adjusted=0.0053777525962300935 Hits=0
+c style: 
+(((PmUSedCPU * NoOfCore) / PmUsedMem) / PmUsedMem) * (vmMem * (((NoOfCore + NoOfCore) * NoOfCore) * ((NoOfCore / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)))))
+
+Generation: 66
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.36236081358237 Adjusted=0.0054536819637518875 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (leftVmMem * (vmCpuOverhead / leftVmCpu))) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.3626252623203 Adjusted=0.005453674098357779 Hits=0
+c style: 
+((((PmUSedCPU * NoOfCore) / PmUsedMem) / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (((((VmCPU / PmUsedMem) * (PmUsedMem / PmUsedMem)) / PmUsedMem) * vmMem) + NoOfCore)
+
+Generation: 67
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1952.3954245250468 Adjusted=5.119291196472124E-4 Hits=0
+c style: 
+(((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1952.6068229887835 Adjusted=5.118737241458443E-4 Hits=0
+c style: 
+(((PmUSedCPU * NoOfCore) * PmUsedMem) / PmUsedMem) * ((VmCPU / PmUsedMem) * ((((NoOfCore - pmMem) / PmUsedMem) * NoOfCore) * (vmMem * (NoOfCore / PmUsedMem))))
+
+Generation: 68
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=169.26220167764126 Adjusted=0.005873294190646658 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmCpu * vmMemOverhead) - vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=169.345526266681 Adjusted=0.005870421266212006 Hits=0
+c style: 
+((VmCPU * ((VmCPU * (NoOfCore / PmUsedMem)) * ((NoOfCore / PmUsedMem) * PmUSedCPU))) / PmUsedMem) * ((NoOfCore - PmUsedMem) * NoOfCore)
+
+Generation: 69
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=192.25037360312135 Adjusted=0.005174634239278118 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=192.29625843134608 Adjusted=0.005173405880254917 Hits=0
+c style: 
+(((PmUSedCPU / (NoOfCore / PmUsedMem)) / PmUsedMem) * (NoOfCore / PmUsedMem)) * (((vmMem + PmUsedMem) + PmUSedCPU) * ((NoOfCore / PmUsedMem) + (pmMem - pmMem)))
+
+Generation: 70
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=180.26064079568428 Adjusted=0.005516917493010482 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * (leftVmMem / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=180.27131063281135 Adjusted=0.005516592760923047 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * ((NoOfCore / PmUsedMem) * (PmUSedCPU * (NoOfCore - PmUsedMem)))
+
+Generation: 71
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2070.95210342861 Adjusted=4.8263663930513996E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2071.4209134056755 Adjusted=4.825274602911954E-4 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * (((((NoOfCore / PmUsedMem) / PmUsedMem) * (NoOfCore / PmUsedMem)) + (PmUSedCPU / PmUsedMem)) * ((NoOfCore * VmCPU) + (PmUSedCPU / PmUsedMem)))
+
+Generation: 72
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=193.45533165982093 Adjusted=0.005142569203241978 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((coMem + coCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=193.46989272203027 Adjusted=0.005142184149961823 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) * VmCPU) / PmUsedMem) * (VmCPU / PmUsedMem)
+
+Generation: 73
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.14245590639834 Adjusted=0.00546023037122035 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - (vmCpuOverhead / leftVmCpu)) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.16274489710972 Adjusted=0.0054596255399084696 Hits=0
+c style: 
+(PmUSedCPU * NoOfCore) * (((((PmUSedCPU * VmCPU) * (PmUSedCPU / PmUsedMem)) / PmUsedMem) * ((NoOfCore / PmUsedMem) * (PmUsedMem * (NoOfCore / PmUsedMem)))) * ((NoOfCore / PmUsedMem) * PmUSedCPU))
+
+Generation: 74
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=179.98862547064385 Adjusted=0.005525209097530822 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=180.1415847370322 Adjusted=0.005520543509938512 Hits=0
+c style: 
+PmUSedCPU * (((VmCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * (NoOfCore - PmUsedMem))) + ((NoOfCore / PmUsedMem) * ((NoOfCore / PmUsedMem) / PmUsedMem)))
+
+Generation: 75
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=186.661620771128 Adjusted=0.0053287400795690625 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - (leftVmMem * coMem))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=186.6989837463246 Adjusted=0.005327679351484935 Hits=0
+c style: 
+((NoOfCore / PmUsedMem) * ((NoOfCore + PmCPU) + PmUsedMem)) * (((NoOfCore / PmUsedMem) / ((vmMem * (NoOfCore / PmUsedMem)) * ((NoOfCore - PmUsedMem) * (PmUSedCPU / PmUsedMem)))) * (((PmUSedCPU / PmUsedMem) / (NoOfCore / PmUsedMem)) / PmUsedMem))
+
+Generation: 76
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2115.2893188692874 Adjusted=4.725251840964213E-4 Hits=0
+c style: 
+((((leftVmMem * (coMem + coCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2115.331176761499 Adjusted=4.725158382490225E-4 Hits=0
+c style: 
+(((((NoOfCore / PmUsedMem) * (PmUSedCPU * VmCPU)) * NoOfCore) / PmUsedMem) * NoOfCore) * (((NoOfCore + PmCPU) * NoOfCore) * (vmMem * (NoOfCore / PmUsedMem)))
+
+Generation: 77
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=196.62011807675285 Adjusted=0.0050602135538225625 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - (leftVmMem * vmMemOverhead))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=196.6347133937392 Adjusted=0.005059839857220542 Hits=0
+c style: 
+((((NoOfCore - PmUsedMem) / PmUsedMem) / PmUsedMem) * (NoOfCore - PmUsedMem)) * (vmMem * ((PmUSedCPU * NoOfCore) * (((NoOfCore * VmCPU) / (PmUSedCPU + NoOfCore)) * (vmMem * PmUSedCPU))))
+
+Generation: 78
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.33529992941232 Adjusted=0.005454486944876516 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - (leftVmMem * vmMemOverhead))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((leftVmMem * vmMemOverhead) * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.33909598043246 Adjusted=0.005454374009276934 Hits=0
+c style: 
+(((PmUSedCPU * (NoOfCore / PmUsedMem)) / PmUsedMem) * (NoOfCore + PmCPU)) * (((((VmCPU / PmUsedMem) * (PmUSedCPU * NoOfCore)) * PmCPU) + (NoOfCore / PmUsedMem)) * (NoOfCore / PmUsedMem))
+
+Generation: 79
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1857.8883164595968 Adjusted=5.379559337403234E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((coMem + coCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) - vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - vmCpuOverhead)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1858.5333942923494 Adjusted=5.377693151784203E-4 Hits=0
+c style: 
+(((vmMem / vmMem) * ((PmUSedCPU / PmUsedMem) * (PmUsedMem / PmUsedMem))) * vmMem) * ((((NoOfCore + PmCPU) * (PmUSedCPU * VmCPU)) * (((NoOfCore / PmUsedMem) * (PmUSedCPU * VmCPU)) * ((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem)))) * (VmCPU * (NoOfCore / PmUsedMem)))
+
+Generation: 80
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=178.54335802533967 Adjusted=0.005569685289382112 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * leftVmMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=178.92132550720584 Adjusted=0.005557984842435757 Hits=0
+c style: 
+((PmUSedCPU / (PmUSedCPU * NoOfCore)) / PmUsedMem) * (((vmMem * (NoOfCore / PmUsedMem)) + (PmUSedCPU / PmUsedMem)) * ((NoOfCore * VmCPU) + (vmMem * (NoOfCore / PmUsedMem))))
+
+Generation: 81
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.86650330316678 Adjusted=0.00565398185254955 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - (leftVmMem * vmMemOverhead))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=175.89531381062298 Adjusted=0.005653061002342662 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) * NoOfCore) * (PmUSedCPU / PmUsedMem)) * ((((PmUSedCPU / PmUsedMem) * (VmCPU / PmUsedMem)) / (PmUSedCPU * NoOfCore)) * (vmMem / ((PmUSedCPU + PmUSedCPU) + (PmUsedMem / NoOfCore))))
+
+Generation: 82
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1784.1449079014758 Adjusted=5.601786138333993E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - (leftVmMem * vmMemOverhead))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((coMem + coCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1784.239134369111 Adjusted=5.601490471210132E-4 Hits=0
+c style: 
+(((vmMem / VmCPU) / PmUsedMem) / PmUsedMem) * ((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem))
+
+Generation: 83
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.38625328452835 Adjusted=0.005452971431007291 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - (leftVmMem * vmMemOverhead))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.40006574902213 Adjusted=0.005452560749724442 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * NoOfCore
+
+Generation: 84
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.2807250806223 Adjusted=0.00545611110802904 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (vmCpuOverhead / leftVmCpu)) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.31004691681454 Adjusted=0.005455238361560163 Hits=0
+c style: 
+(((((PmUSedCPU / PmUsedMem) * NoOfCore) * (PmUSedCPU / PmUsedMem)) / PmUsedMem) * (((NoOfCore / PmUsedMem) * NoOfCore) * ((PmUSedCPU / PmUsedMem) / PmUsedMem))) * vmMem
+
+Generation: 85
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=180.42616707785308 Adjusted=0.005511884068910979 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=180.48495051038026 Adjusted=0.0055100987557797736 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) * ((NoOfCore + VmCPU) * (NoOfCore / PmUsedMem))) * (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem)
+
+Generation: 86
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2412.9047236020624 Adjusted=4.142665575084447E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - vmMemOverhead)) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((leftVmMem * vmMemOverhead) * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2412.909994136679 Adjusted=4.1426565299823625E-4 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * (((PmUSedCPU / PmUsedMem) / PmUsedMem) * PmUSedCPU)
+
+Generation: 87
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=191.0453781714021 Adjusted=0.005207102662514959 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - (leftVmMem * vmMemOverhead))) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((coMem + coCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=191.04765717210452 Adjusted=0.005207040870609761 Hits=0
+c style: 
+(VmCPU * ((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem))) * ((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem))
+
+Generation: 88
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187.6356435540702 Adjusted=0.005301225055663256 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * ((vmCpuOverhead / leftVmCpu) - (leftVmMem * vmMemOverhead))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=187.64123772019585 Adjusted=0.0053010678475469974 Hits=0
+c style: 
+(((NoOfCore / PmUsedMem) * (PmUSedCPU * VmCPU)) / PmUsedMem) * PmUSedCPU
+
+Generation: 89
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=184.88198280139196 Adjusted=0.0053797575479300926 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - (leftVmMem * vmMemOverhead))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * (leftVmMem * vmMemOverhead))) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=184.92344144256586 Adjusted=0.005378557928150834 Hits=0
+c style: 
+(((NoOfCore / PmUsedMem) * ((PmUsedMem * PmUSedCPU) + PmUSedCPU)) * (((NoOfCore / PmUsedMem) / PmUsedMem) * ((PmUSedCPU * (PmUSedCPU * NoOfCore)) * (NoOfCore * (PmUSedCPU / PmUsedMem))))) * (NoOfCore / PmUsedMem)
+
+Generation: 90
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=172.0479192273213 Adjusted=0.005778746167333962 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmCpu * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=172.04828200661422 Adjusted=0.005778734052741294 Hits=0
+c style: 
+(((PmUSedCPU * NoOfCore) / PmUsedMem) * (((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore)) / PmUsedMem)) * (PmUSedCPU * (NoOfCore / PmUsedMem))
+
+Generation: 91
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2554.8821873239917 Adjusted=3.9125434065761844E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2556.367085949455 Adjusted=3.9102716442005717E-4 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)) * vmMem
+
+Generation: 92
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=189.29561733711947 Adjusted=0.005254981769908255 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=189.3024432532724 Adjusted=0.0052547932801320155 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) / PmUsedMem) / PmUsedMem) * (((PmUsedMem / PmUsedMem) * (PmUSedCPU * NoOfCore)) / PmUsedMem)) * (vmMem * ((VmCPU / PmUsedMem) * (((VmCPU / PmUsedMem) / PmUsedMem) / PmUsedMem)))
+
+Generation: 93
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=197.85153159343668 Adjusted=0.005028877534846235 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (coMem - (leftVmCpu * vmMemOverhead))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=197.87232867162268 Adjusted=0.005028351639866382 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * ((((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)) / PmUsedMem) * (NoOfCore / PmUsedMem))
+
+Generation: 94
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=183.32873161094506 Adjusted=0.005425090224733159 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=183.34393412251586 Adjusted=0.005424642827332714 Hits=0
+c style: 
+((((NoOfCore / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) * (NoOfCore / PmUsedMem)) * (NoOfCore / PmUsedMem)) * (PmUSedCPU / PmUsedMem)
+
+Generation: 95
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=658.9972806946546 Adjusted=0.0015151577578433183 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((coMem + coCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coMem + coCpu) * (vmCpuOverhead / leftVmCpu)))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=659.6577191113494 Adjusted=0.0015136431030354112 Hits=0
+c style: 
+(PmUSedCPU * PmUSedCPU) * ((((VmCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) * ((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem))) / PmUsedMem)
+
+Generation: 96
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1896.0182893786991 Adjusted=5.271430463264086E-4 Hits=0
+c style: 
+(((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (coCpu * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1896.9970061357121 Adjusted=5.268712209593956E-4 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * (((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * NoOfCore)
+
+Generation: 97
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=669.605517114637 Adjusted=0.0014911896405246164 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((coMem + coCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coMem + coCpu) * (vmCpuOverhead / leftVmCpu)))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=670.005183789857 Adjusted=0.0014903014524447792 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) / PmUsedMem) * ((((VmCPU / PmUsedMem) / PmUsedMem) / PmUsedMem) * (((PmUSedCPU * NoOfCore) / PmUsedMem) * NoOfCore))) * NoOfCore
+
+Generation: 98
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=170.7236301249033 Adjusted=0.005823310392825083 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((vmCpuOverhead * vmMemOverhead) - vmMemOverhead) * ((coMem + coCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=170.7876667800383 Adjusted=0.005821139658881494 Hits=0
+c style: 
+NoOfCore * (((PmUSedCPU / PmUsedMem) / PmUsedMem) * (NoOfCore * (((PmUSedCPU / PmUsedMem) / PmUsedMem) / PmUsedMem)))
+
+Generation: 99
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=181.91882289217835 Adjusted=0.005466905943241559 Hits=0
+c style: 
+(((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (coCpu * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * coMem)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=181.957899251836 Adjusted=0.005465738315149379 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * (NoOfCore * ((VmCPU / PmUsedMem) / PmUsedMem))) * (((PmUSedCPU / PmUsedMem) * ((NoOfCore / PmUsedMem) * PmUSedCPU)) * (NoOfCore / PmUsedMem))
+
+Generation: 100
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1791.1577638500967 Adjusted=5.579865903388425E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1792.0848561941596 Adjusted=5.57698090274718E-4 Hits=0
+c style: 
+(((VmCPU + ((NoOfCore / PmUsedMem) * NoOfCore)) * (NoOfCore - PmUsedMem)) * (((NoOfCore - PmUsedMem) / PmUsedMem) * (NoOfCore / PmUsedMem))) * ((VmCPU - PmUsedMem) * ((NoOfCore / PmUsedMem) * (PmUSedCPU * NoOfCore)))
+
+Generation: 101
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=177.68462682904365 Adjusted=0.005596452351531892 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((coMem + coCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) - vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=177.72215860101275 Adjusted=0.005595277092822297 Hits=0
+c style: 
+(((VmCPU * (NoOfCore / PmUsedMem)) * (PmUSedCPU / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) * NoOfCore) * PmUSedCPU)) * (((NoOfCore * (NoOfCore / PmUsedMem)) / PmUsedMem) * (NoOfCore / PmUsedMem))
+
+Generation: 102
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1790.9642188459588 Adjusted=5.580468568976277E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1791.3690697719267 Adjusted=5.579208082000918E-4 Hits=0
+c style: 
+((NoOfCore / (((vmMem * vmMem) * NoOfCore) * ((NoOfCore / PmUsedMem) * (NoOfCore / PmUsedMem)))) * ((NoOfCore + PmCPU) * (NoOfCore / PmUsedMem))) * (((VmCPU / PmUsedMem) * ((NoOfCore / PmUsedMem) * (NoOfCore / PmUsedMem))) * ((NoOfCore + PmCPU) / PmUsedMem))
+
+Generation: 103
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=191.65437364013684 Adjusted=0.005190642605747021 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmMemOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=191.7271886596324 Adjusted=0.005188681508586 Hits=0
+c style: 
+(((PmUSedCPU * NoOfCore) / PmUsedMem) * (((PmUSedCPU / PmUsedMem) / PmUsedMem) / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)) * (((NoOfCore / (NoOfCore + PmCPU)) / PmUsedMem) * (((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) - pmMem)))
+
+Generation: 104
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=178.25734982798335 Adjusted=0.005578571818447653 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (leftVmMem * (vmCpuOverhead / leftVmCpu))) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=178.2819820313062 Adjusted=0.005577805358183624 Hits=0
+c style: 
+(VmCPU / PmUsedMem) * (((PmUSedCPU / PmUsedMem) * (((NoOfCore / PmUsedMem) * NoOfCore) + PmUsedMem)) * ((NoOfCore + PmCPU) + PmUsedMem))
+
+Generation: 105
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187.4501414894875 Adjusted=0.005306443349397984 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - (coCpu * vmMemOverhead)) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=187.46369405024615 Adjusted=0.005306061759212843 Hits=0
+c style: 
+((NoOfCore / PmUsedMem) / PmUsedMem) * (((NoOfCore / PmUsedMem) * ((PmUSedCPU * VmCPU) / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)))
+
+Generation: 106
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=174.69113847617777 Adjusted=0.005691806705069485 Hits=0
+c style: 
+(((leftVmMem * coMem) * (((vmCpuOverhead * vmMemOverhead) - vmMemOverhead) * ((coMem + coCpu) * (coMem + coCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=174.69393525656398 Adjusted=0.005691716100158555 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) * vmMem) / PmUsedMem) / PmUsedMem
+
+Generation: 107
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=184.5279378530589 Adjusted=0.00539002379680421 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmMemOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=184.5831446576479 Adjusted=0.00538842038615488 Hits=0
+c style: 
+((NoOfCore * (PmUSedCPU / vmMem)) * (((PmUSedCPU / PmUsedMem) * NoOfCore) * ((NoOfCore * (PmUSedCPU / PmUsedMem)) * (NoOfCore + PmCPU)))) * (VmCPU * (NoOfCore / PmUsedMem))
+
+Generation: 108
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=189.5018082959713 Adjusted=0.0052492940037942295 Hits=0
+c style: 
+(((leftVmMem * coMem) * (((vmCpuOverhead * vmMemOverhead) - vmMemOverhead) * ((coMem + coCpu) * (coMem + coCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=189.52876818529813 Adjusted=0.005248551226801893 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) * ((NoOfCore / PmUsedMem) / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) / PmUsedMem) + PmUSedCPU)) * ((((NoOfCore / PmUsedMem) / PmUsedMem) / PmUsedMem) * ((PmUSedCPU * (PmUSedCPU * NoOfCore)) * (NoOfCore * (PmUSedCPU / PmUsedMem))))) * ((((NoOfCore / PmUsedMem) * NoOfCore) / PmUsedMem) * (((PmUSedCPU * VmCPU) / PmUsedMem) / PmUsedMem))
+
+Generation: 109
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1888.618377876038 Adjusted=5.292073847863485E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * ((leftVmCpu * vmMemOverhead) - vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu))) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (coMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1889.1165754683545 Adjusted=5.29067896117576E-4 Hits=0
+c style: 
+(NoOfCore * ((NoOfCore * (PmUSedCPU / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)))) * (PmUSedCPU / PmUsedMem)
+
+Generation: 110
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1607.9049183198588 Adjusted=6.215407688878696E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - coMem) - (leftVmMem * (coCpu * vmMemOverhead)))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1608.246210681738 Adjusted=6.214089511985627E-4 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)
+
+Generation: 111
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.02647243305637 Adjusted=0.005680963699254408 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((leftVmCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=175.10003642240412 Adjusted=0.0056785905347647965 Hits=0
+c style: 
+(((VmCPU * (NoOfCore / PmUsedMem)) * (PmUSedCPU / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) * NoOfCore) * ((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)))) * ((NoOfCore / PmUsedMem) * PmUSedCPU)
+
+Generation: 112
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1882.0535572831366 Adjusted=5.310523410936844E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * ((leftVmCpu * vmMemOverhead) - vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu))) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (coMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1882.620921302095 Adjusted=5.308923832236519E-4 Hits=0
+c style: 
+((NoOfCore + VmCPU) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) * ((((PmUsedMem / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) * (((NoOfCore / PmUsedMem) / PmUsedMem) * ((PmUSedCPU / PmUsedMem) + (pmMem - pmMem)))) * (NoOfCore / PmUsedMem))
+
+Generation: 113
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187.67617553300553 Adjusted=0.00530008623068082 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * (((vmCpuOverhead + coCpu) - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=187.68925512665834 Adjusted=0.0052997188384084 Hits=0
+c style: 
+((((NoOfCore + PmCPU) / PmUsedMem) * (PmUsedMem * (NoOfCore / PmUsedMem))) * ((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem))) * (PmUSedCPU / PmUsedMem)
+
+Generation: 114
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=179.5172479124663 Adjusted=0.00553963685777497 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * vmCpuOverhead) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=179.52597038152226 Adjusted=0.005539369199271481 Hits=0
+c style: 
+((NoOfCore * PmUSedCPU) / PmUsedMem) * ((NoOfCore * (NoOfCore / PmUsedMem)) * (((NoOfCore / PmUsedMem) / PmUsedMem) * (PmUSedCPU / PmUsedMem)))
+
+Generation: 115
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1840.9173776577468 Adjusted=5.429125172116236E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * ((leftVmCpu * vmMemOverhead) - (coCpu / leftVmCpu))) - (vmMemOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1841.1334526658616 Adjusted=5.428488357088571E-4 Hits=0
+c style: 
+(((PmUSedCPU * NoOfCore) / PmUsedMem) * (((PmUSedCPU / PmUsedMem) / PmUsedMem) / PmUsedMem)) * PmUsedMem
+
+Generation: 116
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=196.64640758727978 Adjusted=0.00505954048043299 Hits=0
+c style: 
+(((leftVmMem * vmMemOverhead) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (coCpu / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=197.06988491177344 Adjusted=0.005048723082993821 Hits=0
+c style: 
+(((VmCPU * (NoOfCore / PmUsedMem)) * ((NoOfCore / PmUsedMem) / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) * NoOfCore) * ((NoOfCore / PmUsedMem) * (NoOfCore + PmCPU)))) * vmMem
+
+Generation: 117
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1619.3269361592313 Adjusted=6.171594001704165E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * ((leftVmCpu * vmMemOverhead) - vmMemOverhead)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1619.7769771604308 Adjusted=6.169880335738606E-4 Hits=0
+c style: 
+PmUSedCPU / PmUsedMem
+
+Generation: 118
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=193.9933797244018 Adjusted=0.0051283792373534535 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((leftVmCpu - ((coMem + coCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=194.12520945700822 Adjusted=0.005124914421784793 Hits=0
+c style: 
+NoOfCore * ((((PmUSedCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) * (PmUsedMem * (PmUSedCPU / PmUsedMem))) / PmUsedMem)
+
+Generation: 119
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1888.5036834024693 Adjusted=5.29239508122725E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * vmCpuOverhead) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - vmMemOverhead)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1889.5607610394557 Adjusted=5.289435920854438E-4 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * (((NoOfCore / PmUsedMem) * NoOfCore) * ((PmUSedCPU / PmUsedMem) * (PmUsedMem * NoOfCore)))) * (NoOfCore / PmUsedMem)
+
+Generation: 120
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=172.34355895699778 Adjusted=0.005768890439408107 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (vmCpuOverhead / leftVmCpu)) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=172.36722314055902 Adjusted=0.005768103000584148 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (((vmMem * vmMem) * NoOfCore) * (PmUsedMem * (PmUSedCPU / PmUsedMem)))) / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)
+
+Generation: 121
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=192.96912843135905 Adjusted=0.005155459572804523 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=193.01417745370733 Adjusted=0.005154262503515263 Hits=0
+c style: 
+(PmUsedMem / PmUsedMem) * (((NoOfCore + PmCPU) / PmUsedMem) * ((NoOfCore / PmUsedMem) * (NoOfCore * (NoOfCore / PmUsedMem))))
+
+Generation: 122
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=188.66789965374875 Adjusted=0.005272373458163273 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=188.66789965374875 Adjusted=0.005272373458163273 Hits=0
+c style: 
+(NoOfCore * (((NoOfCore / (NoOfCore / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) * vmMem)) * (((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)) * (NoOfCore * (PmUSedCPU / PmUsedMem))))) * ((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem))
+
+Generation: 123
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=172.0351417528871 Adjusted=0.005779172888638472 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((vmCpuOverhead * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu))) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - vmMemOverhead) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=172.05673433266634 Adjusted=0.005778451811518087 Hits=0
+c style: 
+((NoOfCore * (PmUSedCPU * NoOfCore)) * ((PmUSedCPU / PmUsedMem) + NoOfCore)) * ((NoOfCore / PmUsedMem) * ((((NoOfCore / PmUsedMem) * PmUSedCPU) / PmUSedCPU) * (PmUSedCPU / PmUsedMem)))
+
+Generation: 124
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=184.36868349204124 Adjusted=0.005394654486192835 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (coCpu * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=184.37816983740564 Adjusted=0.005394378425879895 Hits=0
+c style: 
+NoOfCore * ((((vmMem + NoOfCore) * (PmUSedCPU * NoOfCore)) * ((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem))) * (NoOfCore / PmUsedMem))
+
+Generation: 125
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=171.07879298476405 Adjusted=0.005811291343079914 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * (vmCpuOverhead / leftVmCpu))) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=171.13562220674876 Adjusted=0.005809372790943407 Hits=0
+c style: 
+((NoOfCore / PmUsedMem) * (VmCPU / PmUsedMem)) * (((vmMem * (NoOfCore / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) * (PmUSedCPU / (PmUSedCPU / PmUsedMem)))) * (NoOfCore / PmUsedMem))
+
+Generation: 126
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=197.56909024147376 Adjusted=0.005036030526120308 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=197.68307044078958 Adjusted=0.005033141463847139 Hits=0
+c style: 
+(((((PmUSedCPU / PmUsedMem) * vmMem) / PmUsedMem) * vmMem) * NoOfCore) * (((NoOfCore / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * PmUSedCPU)) * PmUsedMem)
+
+Generation: 127
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187.96855283159636 Adjusted=0.005291885792717971 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=187.96855283159636 Adjusted=0.005291885792717971 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) / PmUsedMem) * ((PmUsedMem * VmCPU) * (VmCPU / PmUsedMem))
+
+Generation: 128
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=657.586603787362 Adjusted=0.0015184031898754962 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu + coMem) * coMem) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (coCpu * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=657.9345579213401 Adjusted=0.0015176013884513465 Hits=0
+c style: 
+NoOfCore * (((PmUSedCPU / PmUsedMem) / PmUsedMem) * ((VmCPU * (NoOfCore / (NoOfCore + PmCPU))) * (((PmUSedCPU / PmUsedMem) / PmUsedMem) * (NoOfCore / PmUsedMem))))
+
+Generation: 129
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=181.22169864424606 Adjusted=0.005487820646169663 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - (coCpu * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=181.31264986074922 Adjusted=0.005485082909846366 Hits=0
+c style: 
+((NoOfCore * ((vmMem * (PmUSedCPU / PmUsedMem)) / PmUsedMem)) * (NoOfCore - PmUsedMem)) * (NoOfCore + PmCPU)
+
+Generation: 130
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=183.3759416815753 Adjusted=0.005423701112409993 Hits=0
+c style: 
+(((leftVmMem * (coMem - vmMemOverhead)) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=183.42522889058355 Adjusted=0.005422251641033795 Hits=0
+c style: 
+((NoOfCore * (NoOfCore / PmUsedMem)) * (vmMem * ((NoOfCore / PmUsedMem) * (NoOfCore * (PmUSedCPU / PmUsedMem))))) * ((NoOfCore / PmUsedMem) * PmUsedMem)
+
+Generation: 131
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=193.3743756097355 Adjusted=0.005144711060102892 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=193.3865376721873 Adjusted=0.005144389174143305 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * (((NoOfCore / PmUsedMem) * NoOfCore) * (PmUSedCPU / NoOfCore))) * (PmUSedCPU / PmUsedMem)
+
+Generation: 132
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=195.3732712130108 Adjusted=0.005092342729857955 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * coMem)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=195.38164470724885 Adjusted=0.005092125598045202 Hits=0
+c style: 
+((NoOfCore * ((vmMem * (NoOfCore / PmUsedMem)) / PmUsedMem)) * PmUsedMem) * (NoOfCore + PmCPU)
+
+Generation: 133
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=184.49870932170495 Adjusted=0.005390873088317447 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=184.50197932613963 Adjusted=0.0053907780587173874 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * (NoOfCore * (((PmUSedCPU / PmUsedMem) / PmUsedMem) / PmUsedMem))
+
+Generation: 134
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.74134025237424 Adjusted=0.005657985837224444 Hits=0
+c style: 
+(((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=175.77915267077483 Adjusted=0.00565677561461307 Hits=0
+c style: 
+PmUSedCPU / PmUsedMem
+
+Generation: 135
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=188.61307381886903 Adjusted=0.005273897943109483 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead)) * ((coMem - vmMemOverhead) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=188.75913016079124 Adjusted=0.0052698386588969715 Hits=0
+c style: 
+PmUSedCPU / PmUsedMem
+
+Generation: 136
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=177.81944225883723 Adjusted=0.0055922330780593865 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / vmCpuOverhead) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (vmMemOverhead * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=177.8294922833064 Adjusted=0.0055919188005956735 Hits=0
+c style: 
+(NoOfCore * (((PmUSedCPU / PmUsedMem) * ((NoOfCore / PmUsedMem) * vmMem)) * (PmUSedCPU / PmUsedMem))) * (NoOfCore * (NoOfCore - vmMem))
+
+Generation: 137
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=185.51259466854964 Adjusted=0.0053615682189028235 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (vmMemOverhead * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=185.5167448763291 Adjusted=0.0053614489179674195 Hits=0
+c style: 
+(PmUsedMem * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)
+
+Generation: 138
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.99259951716334 Adjusted=0.005435001204527888 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmCpu * coMem)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=183.01216944144699 Adjusted=0.005434423185354607 Hits=0
+c style: 
+(VmCPU / (((NoOfCore - PmUsedMem) / PmUsedMem) * (PmUsedMem * (PmUSedCPU / (PmUSedCPU / PmUsedMem))))) * (((((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) * ((vmMem * (PmUSedCPU / PmUsedMem)) / PmUsedMem)) * ((PmUsedMem / PmUsedMem) / PmUsedMem))
+
+Generation: 139
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1607.5285057517606 Adjusted=6.21686215957137E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * leftVmMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1607.6916719198657 Adjusted=6.216231596490874E-4 Hits=0
+c style: 
+NoOfCore * (((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem))
+
+Generation: 140
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=178.85863363784492 Adjusted=0.005559922144263333 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=178.89530844461086 Adjusted=0.005558788656836465 Hits=0
+c style: 
+(NoOfCore / PmUsedMem) * (((NoOfCore + PmCPU) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * vmMem)))
+
+Generation: 141
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=202.84134676843678 Adjusted=0.004905776064833389 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmCpu * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=202.87776088919122 Adjusted=0.004904899855867585 Hits=0
+c style: 
+(((NoOfCore / PmUsedMem) * ((PmUSedCPU * NoOfCore) / PmUsedMem)) * (PmUSedCPU / PmUsedMem)) * ((vmMem * (NoOfCore * ((PmUSedCPU / PmUsedMem) / PmUsedMem))) * (((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * ((NoOfCore / PmUSedCPU) * ((PmUSedCPU / PmUsedMem) / PmUsedMem))))
+
+Generation: 142
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=180.86133124530775 Adjusted=0.005498695039525074 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * (coCpu * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmCpu * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=180.86386451023373 Adjusted=0.005498618445687591 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)) * (((NoOfCore * NoOfCore) / PmUsedMem) * ((NoOfCore * (NoOfCore / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) * (vmMem * (PmUSedCPU / PmUsedMem)))))
+
+Generation: 143
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=173.14346736539642 Adjusted=0.005742391690764665 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu))) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=173.17339201652052 Adjusted=0.005741405093064669 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * ((((NoOfCore + (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem)) * (NoOfCore / PmUsedMem)) * vmMem)
+
+Generation: 144
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=174.78550134934414 Adjusted=0.005688751303855646 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (leftVmMem * (vmCpuOverhead / leftVmCpu))) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=174.79713153852373 Adjusted=0.005688374953836278 Hits=0
+c style: 
+PmUSedCPU * (NoOfCore * ((((pmMem / PmUSedCPU) + vmMem) / PmUsedMem) * (VmCPU / PmUsedMem)))
+
+Generation: 145
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=180.03265366762736 Adjusted=0.0055238653344604986 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu))) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=180.05288495889516 Adjusted=0.005523248084265723 Hits=0
+c style: 
+PmUSedCPU * (NoOfCore * ((((pmMem / PmUSedCPU) + vmMem) / PmUsedMem) * (VmCPU / PmUsedMem)))
+
+Generation: 146
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.3765116530392 Adjusted=0.005453261112808536 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (leftVmMem * (vmCpuOverhead / leftVmCpu))) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.4087000640879 Adjusted=0.005452304060006822 Hits=0
+c style: 
+((((vmMem * vmMem) / PmUsedMem) * ((PmUSedCPU * (PmUSedCPU / PmUsedMem)) / PmUsedMem)) * (((NoOfCore / PmUsedMem) * VmCPU) * (NoOfCore - ((vmMem * PmUSedCPU) / PmUsedMem)))) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)
+
+Generation: 147
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=183.27764839216735 Adjusted=0.005426594102567811 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (vmCpuOverhead / leftVmCpu)) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=183.28280909299806 Adjusted=0.0054264421349001215 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)) * PmUsedMem) * (NoOfCore / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) * ((NoOfCore * NoOfCore) * ((PmUsedMem / PmUsedMem) * NoOfCore)))
+
+Generation: 148
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=177.13766901503962 Adjusted=0.005613635821829313 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((vmCpuOverhead + coCpu) - (leftVmMem * vmMemOverhead)) * (((coCpu * vmMemOverhead) + coCpu) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=177.2289297861413 Adjusted=0.005610761402202831 Hits=0
+c style: 
+((PmUsedMem / PmUsedMem) * (PmUSedCPU / PmUsedMem)) / PmUsedMem
+
+Generation: 149
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=171.034336297133 Adjusted=0.005812793082613621 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * ((coCpu * vmMemOverhead) - vmMemOverhead)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=171.11984273528063 Adjusted=0.005809905378184632 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * NoOfCore
+
+Generation: 150
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=643.3210822221583 Adjusted=0.001552021232257624 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * ((coCpu * vmMemOverhead) - vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu))) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (coCpu * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=643.3269434680786 Adjusted=0.0015520071139932738 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) * (NoOfCore / PmUsedMem)) * PmUsedMem) * (NoOfCore / PmUsedMem)) * ((PmUSedCPU / PmUsedMem) * ((NoOfCore * NoOfCore) * (((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * NoOfCore)))
+
+Generation: 151
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=186.9679152935533 Adjusted=0.005320056874803765 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=186.99340156267914 Adjusted=0.00531933563458922 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (((vmMem / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (NoOfCore / PmUsedMem))
+
+Generation: 152
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.82479692069805 Adjusted=0.00543996249010627 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * coCpu)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.83986397391533 Adjusted=0.005439516644452522 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)
+
+Generation: 153
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=194.09075785054978 Adjusted=0.005125819444332954 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=194.14801549099275 Adjusted=0.005124315497054881 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * (NoOfCore - ((vmMem * PmUSedCPU) / PmUsedMem))
+
+Generation: 154
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=189.25262438991138 Adjusted=0.005256169281273933 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=189.25400741448158 Adjusted=0.005256131072295526 Hits=0
+c style: 
+((((vmMem * vmMem) / PmUsedMem) * ((PmUSedCPU * (PmUSedCPU / PmUsedMem)) / PmUsedMem)) * ((PmUsedMem * VmCPU) * (NoOfCore - (PmUSedCPU / PmUsedMem)))) * ((((PmUSedCPU / PmUsedMem) / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * PmUSedCPU)) / PmUsedMem)
+
+Generation: 155
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2082.987062124558 Adjusted=4.7984942813442035E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2082.9875871153513 Adjusted=4.798493072524471E-4 Hits=0
+c style: 
+(NoOfCore * ((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem))) * ((((NoOfCore * (NoOfCore / PmUsedMem)) * NoOfCore) / PmUsedMem) * (((PmUSedCPU / PmUsedMem) / PmUsedMem) / PmUsedMem))
+
+Generation: 156
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1845.806069577454 Adjusted=5.414753700851753E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - (vmCpuOverhead / leftVmCpu)) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1846.176223157859 Adjusted=5.413668644404916E-4 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) / PmUsedMem
+
+Generation: 157
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=179.0450312897973 Adjusted=0.0055541660485504745 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - (vmCpuOverhead / leftVmCpu)) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=179.0450312897973 Adjusted=0.0055541660485504745 Hits=0
+c style: 
+(NoOfCore * (((PmUSedCPU / PmUsedMem) / (vmMem * (PmUSedCPU / PmUsedMem))) * (PmUSedCPU / PmUsedMem))) * (PmUSedCPU / PmUsedMem)
+
+Generation: 158
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=185.30943568220817 Adjusted=0.005367414679446083 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=185.34623723988665 Adjusted=0.0053663546675894675 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) / PmUsedMem
+
+Generation: 159
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1961.6163385597315 Adjusted=5.0952393514356E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1961.6621500586866 Adjusted=5.095120420853372E-4 Hits=0
+c style: 
+(NoOfCore * ((NoOfCore / PmUsedMem) * (vmMem * PmUSedCPU))) * (((PmUSedCPU / PmUsedMem) / PmUsedMem) * (((PmUSedCPU / PmUsedMem) * NoOfCore) * ((PmUSedCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)))))
+
+Generation: 160
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=190.15562517931312 Adjusted=0.005231339643088986 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmMem * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((leftVmMem * vmMemOverhead) - (vmCpuOverhead / leftVmCpu)))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=190.16650954414695 Adjusted=0.0052310417885673925 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) / PmUsedMem) / PmUsedMem) * ((PmUSedCPU * (NoOfCore / PmUsedMem)) * NoOfCore)) / PmUsedMem
+
+Generation: 161
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=181.11195765669726 Adjusted=0.005491127616590225 Hits=0
+c style: 
+(((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (coMem * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=181.13140543832625 Adjusted=0.005490541280309958 Hits=0
+c style: 
+(((NoOfCore / vmMem) * (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem)) * (vmMem * (PmUSedCPU / PmUsedMem))
+
+Generation: 162
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=201.13007348349456 Adjusted=0.004947309337824278 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / vmCpuOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=201.18786709708183 Adjusted=0.0049458951932058485 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * ((PmUsedMem * VmCPU) * ((PmUSedCPU / PmUsedMem) * (VmCPU / PmUsedMem)))) * (PmUSedCPU / PmUsedMem)
+
+Generation: 163
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.15747947709286 Adjusted=0.005459782493485711 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu))) - (leftVmCpu * ((coMem - ((vmCpuOverhead / vmCpuOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.15759005222495 Adjusted=0.0054597791973287225 Hits=0
+c style: 
+vmMem * ((((PmUSedCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem))) / PmUsedMem) / PmUsedMem)
+
+Generation: 164
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=179.44656248025467 Adjusted=0.005541806872100569 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * (coMem / vmCpuOverhead))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * (coCpu - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=179.47813065586993 Adjusted=0.0055408375317603925 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) / PmUsedMem) * (((PmUSedCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * NoOfCore)) * NoOfCore)
+
+Generation: 165
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=175.65947707524884 Adjusted=0.005660607721452984 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=175.67815096074636 Adjusted=0.005660009427097615 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) / PmUsedMem) * ((PmUSedCPU * NoOfCore) * (((PmUSedCPU / NoOfCore) / PmUsedMem) * (NoOfCore / NoOfCore)))) * ((PmUsedMem * (((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * VmCPU)) * ((NoOfCore + PmCPU) / PmUsedMem))
+
+Generation: 166
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=3225.05375996806 Adjusted=3.099762354889897E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - vmMemOverhead) * ((coMem - (leftVmMem * vmMemOverhead)) - vmCpuOverhead)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=3225.6095352591706 Adjusted=3.099228428703187E-4 Hits=0
+c style: 
+((NoOfCore * (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem)) * ((PmUsedMem / PmUsedMem) * (((PmUSedCPU / PmUsedMem) / (PmUsedMem * (PmUSedCPU / PmUsedMem))) * NoOfCore))
+
+Generation: 167
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=183.79776288712375 Adjusted=0.0054113209184832485 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=183.80821461184604 Adjusted=0.005411014884269657 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * ((((PmUSedCPU / PmUsedMem) / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem))
+
+Generation: 168
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=195.46521244565002 Adjusted=0.005089959629757045 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=195.46535000165673 Adjusted=0.005089956066001294 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) / PmUSedCPU) * ((NoOfCore / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem))) * (NoOfCore * ((NoOfCore / PmUsedMem) * (PmUSedCPU / PmUsedMem)))
+
+Generation: 169
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=179.33370657895819 Adjusted=0.005545275029114733 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=179.33842353744427 Adjusted=0.005545129986080679 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * (((((PmUSedCPU / PmUsedMem) / PmUsedMem) - ((PmUSedCPU / PmUsedMem) / (NoOfCore + PmCPU))) / PmUSedCPU) * ((PmUsedMem * VmCPU) * ((vmMem + NoOfCore) * (PmUSedCPU / PmUsedMem))))
+
+Generation: 170
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=197.41685077882545 Adjusted=0.005039894525463951 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=197.42141190595805 Adjusted=0.005039778673049411 Hits=0
+c style: 
+((vmMem / PmUsedMem) / (((VmCPU * pmMem) + vmMem) / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) * vmMem) * (vmMem * (PmUsedMem * (NoOfCore / PmUsedMem))))
+
+Generation: 171
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1739.6639046403216 Adjusted=5.744934431823201E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1740.0953857761992 Adjusted=5.743510712678094E-4 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) / (vmMem * (PmUSedCPU * NoOfCore))) * (((PmUSedCPU / PmUsedMem) / PmUsedMem) * (((PmUSedCPU / PmUsedMem) * NoOfCore) / PmUsedMem))
+
+Generation: 172
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=170.18761163604023 Adjusted=0.005841544200792328 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((coCpu * vmMemOverhead) - vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=170.1977139571004 Adjusted=0.005841199493181229 Hits=0
+c style: 
+(PmUSedCPU * (((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) / PmUsedMem)) / PmUsedMem
+
+Generation: 173
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=185.32240515896245 Adjusted=0.005367041065978307 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((leftVmMem / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=185.32718790607518 Adjusted=0.005366903301863201 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) / PmUsedMem
+
+Generation: 174
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=180.58935420296552 Adjusted=0.005506930758078929 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=180.60611439768178 Adjusted=0.0055064225305222715 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)
+
+Generation: 175
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=183.60843397464095 Adjusted=0.005416870608075072 Hits=0
+c style: 
+((((leftVmMem * coCpu) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (vmMemOverhead - (vmCpuOverhead + coCpu)))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=183.61781411521739 Adjusted=0.005416595385404759 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) * NoOfCore) / PmUsedMem) * (vmMem / PmUsedMem)) + (((NoOfCore / PmUsedMem) / PmUsedMem) * (vmMem * ((PmUSedCPU / PmUsedMem) * NoOfCore)))
+
+Generation: 176
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=191.88669297075916 Adjusted=0.005184390818248908 Hits=0
+c style: 
+((leftVmMem * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=191.91653414174 Adjusted=0.0051835888740634235 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (NoOfCore * ((NoOfCore * NoOfCore) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)))) * (NoOfCore * PmUsedMem)
+
+Generation: 177
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1963.8727303040218 Adjusted=5.089388155156856E-4 Hits=0
+c style: 
+((leftVmMem * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1963.8727303040218 Adjusted=5.089388155156856E-4 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * (((vmMem * NoOfCore) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) / PmUsedMem)
+
+Generation: 178
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=656.4877254655163 Adjusted=0.0015209409412046092 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * (vmCpuOverhead / leftVmCpu))) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=657.6626627972167 Adjusted=0.0015182278524080712 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) / PmUsedMem) + (NoOfCore / PmUsedMem)
+
+Generation: 179
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2122.166440701103 Adjusted=4.70994633689568E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2124.6440216854 Adjusted=4.704456577856865E-4 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem)) / PmUsedMem
+
+Generation: 180
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=193.27686734512923 Adjusted=0.005147293209250274 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmMem * coCpu) * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=193.27881121058402 Adjusted=0.005147241707774674 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) * (NoOfCore + PmCPU)) * (((PmUSedCPU / PmUsedMem) + VmCPU) * (PmUSedCPU / PmUsedMem))) * VmCPU
+
+Generation: 181
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1720.5270645064988 Adjusted=5.808796275222456E-4 Hits=0
+c style: 
+((coMem - (leftVmMem * vmMemOverhead)) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * (((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead)) * ((coMem - (leftVmMem * vmCpuOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1720.7572784318043 Adjusted=5.808019588631047E-4 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) + (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem)
+
+Generation: 182
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=178.07991959574494 Adjusted=0.005584099000364755 Hits=0
+c style: 
+(((leftVmMem * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu))) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=178.29955125407167 Adjusted=0.005577258799621738 Hits=0
+c style: 
+(PmUsedMem * (PmUSedCPU / PmUsedMem)) + (NoOfCore * (PmUSedCPU / PmUsedMem))
+
+Generation: 183
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=174.68015717506475 Adjusted=0.005692162484824641 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - coMem)))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=174.69844506984003 Adjusted=0.00569157000565657 Hits=0
+c style: 
+(((((PmUSedCPU / PmUsedMem) + PmCPU) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) / PmUsedMem) / (vmMem * PmUsedMem)) * (((PmUSedCPU / (PmUSedCPU / PmUsedMem)) * vmMem) * (PmUSedCPU / PmUsedMem))
+
+Generation: 184
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=187.5842618909161 Adjusted=0.005302669427305847 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu))) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=187.72096116129438 Adjusted=0.005298828459999887 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) / PmUsedMem) * (PmUSedCPU / PmUsedMem)
+
+Generation: 185
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1943.028469240031 Adjusted=5.143957590245193E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((coCpu - vmCpuOverhead) / coCpu))) - (((vmCpuOverhead / leftVmCpu) * leftVmCpu) / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1943.2276004959517 Adjusted=5.143430736941039E-4 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) / (NoOfCore / NoOfCore)) / PmUsedMem) / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * (((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (NoOfCore - VmCPU)))
+
+Generation: 186
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=189.06601038416352 Adjusted=0.00526132998729646 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=189.07614302755925 Adjusted=0.005261049514535916 Hits=0
+c style: 
+((((PmUSedCPU * (PmUSedCPU / PmUsedMem)) * vmMem) * (NoOfCore / PmUsedMem)) * (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem)
+
+Generation: 187
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1890.5084692408032 Adjusted=5.286785738799103E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((coCpu - vmCpuOverhead) / coCpu))) - (((vmCpuOverhead / leftVmCpu) * leftVmCpu) / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1890.8005429635475 Adjusted=5.285969515758135E-4 Hits=0
+c style: 
+PmUSedCPU + ((PmUSedCPU / PmUsedMem) * NoOfCore)
+
+Generation: 188
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=182.3863094670246 Adjusted=0.005452969760427039 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((coCpu * vmMemOverhead) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=182.40863226690487 Adjusted=0.0054523060754564315 Hits=0
+c style: 
+(((((PmUSedCPU / PmUsedMem) + PmCPU) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) / PmUsedMem) / (((PmUSedCPU / PmUsedMem) / PmUsedMem) / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) * vmMem) * (PmUSedCPU / PmUsedMem))
+
+Generation: 189
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1884.7036800175956 Adjusted=5.303060128676574E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * ((vmCpuOverhead / leftVmCpu) / leftVmCpu)) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1885.1975776711522 Adjusted=5.30167153132854E-4 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) / PmUsedMem
+
+Generation: 190
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1718.7401498372888 Adjusted=5.814831968042462E-4 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (((vmCpuOverhead / leftVmCpu) * leftVmCpu) / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmCpuOverhead)) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1719.8851271459796 Adjusted=5.810963115582623E-4 Hits=0
+c style: 
+PmUSedCPU + ((PmUSedCPU / PmUsedMem) / PmUsedMem)
+
+Generation: 191
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=178.7859598592766 Adjusted=0.005562169597574401 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * (vmCpuOverhead / leftVmCpu)) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((vmCpuOverhead / leftVmCpu) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=178.8723336006088 Adjusted=0.005559498673211272 Hits=0
+c style: 
+(PmUsedMem * PmUsedMem) + (((PmUSedCPU / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) * (((PmUSedCPU / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * (PmUSedCPU / PmUsedMem)))
+
+Generation: 192
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=644.5183515807988 Adjusted=0.0015491426348315537 Hits=0
+c style: 
+((((vmCpuOverhead / leftVmCpu) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (((vmCpuOverhead / leftVmCpu) * leftVmCpu) / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmCpuOverhead)) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=645.2928479409118 Adjusted=0.0015472861926075752 Hits=0
+c style: 
+(((((PmUSedCPU / PmUsedMem) * NoOfCore) / PmUsedMem) * (PmUSedCPU / PmUsedMem)) * ((((PmUSedCPU / PmUsedMem) / PmUsedMem) * NoOfCore) / PmUsedMem)) * (PmUSedCPU / PmUsedMem)
+
+Generation: 193
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1858.373726748971 Adjusted=5.378154943323061E-4 Hits=0
+c style: 
+((((vmCpuOverhead / leftVmCpu) * coMem) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))) - (((vmCpuOverhead / leftVmCpu) * leftVmCpu) / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmCpuOverhead)) * ((coMem - (vmCpuOverhead / leftVmCpu)) - ((leftVmMem * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=1858.7268057883634 Adjusted=5.377133871961836E-4 Hits=0
+c style: 
+PmUSedCPU / PmUsedMem
+
+Generation: 194
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2408.304457888135 Adjusted=4.1505754771920585E-4 Hits=0
+c style: 
+((((leftVmMem * (coCpu / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=2409.898078519044 Adjusted=4.1478319175328876E-4 Hits=0
+c style: 
+(VmCPU * VmCPU) * ((PmUSedCPU / PmUsedMem) * (((NoOfCore / PmUsedMem) * ((PmUSedCPU / PmUsedMem) * (PmUsedMem / PmUsedMem))) * (((vmMem * NoOfCore) * (PmUSedCPU / PmUsedMem)) / PmUsedMem)))
+
+Generation: 195
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=183.41994498172969 Adjusted=0.0054224069967002166 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (coCpu * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=183.4502866885755 Adjusted=0.00542151502148865 Hits=0
+c style: 
+(((PmUSedCPU / PmUsedMem) / PmUsedMem) * ((PmUSedCPU / PmUsedMem) / PmUsedMem)) / PmUsedMem
+
+Generation: 196
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=196.78377326604087 Adjusted=0.005056026505545985 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((vmCpuOverhead / leftVmCpu) * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=196.79979812529774 Adjusted=0.005055616888782377 Hits=0
+c style: 
+((((PmUSedCPU / PmUsedMem) * (vmMem + (PmUSedCPU / PmUsedMem))) * (PmUSedCPU / NoOfCore)) * (PmUSedCPU / PmUsedMem)) / PmUsedMem
+
+Generation: 197
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=193.51581486519225 Adjusted=0.0051409701606681315 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (leftVmMem * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - ((coCpu * vmMemOverhead) - vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=193.5442758908104 Adjusted=0.005140218057925581 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * (VmCPU * (VmCPU / PmUsedMem))
+
+Generation: 198
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=178.81424126246398 Adjusted=0.0055612947727558485 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - (vmCpuOverhead * vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (coMem - (coCpu * vmMemOverhead)))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=178.83107954216842 Adjusted=0.005560774047210849 Hits=0
+c style: 
+((PmUSedCPU / PmUsedMem) * ((((PmUSedCPU / PmUsedMem) * NoOfCore) / PmUsedMem) * (PmUSedCPU / (PmUSedCPU / PmUsedMem)))) * ((PmUSedCPU / PmUsedMem) / (((PmUSedCPU / PmUsedMem) * NoOfCore) * vmMem))
+
+Generation: 199
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=193.4793062266401 Adjusted=0.005141935249576792 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((coCpu * vmMemOverhead) - vmMemOverhead) * ((vmCpuOverhead / leftVmCpu) * (vmCpuOverhead / leftVmCpu)))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - vmMemOverhead) * (coMem - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=193.54485730428235 Adjusted=0.005140202695956784 Hits=0
+c style: 
+(PmUSedCPU / PmUsedMem) * (vmMem / PmUsedMem)
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=169.26220167764126 Adjusted=0.005873294190646658 Hits=0
+c style: 
+((((leftVmMem * (vmCpuOverhead / leftVmCpu)) * coMem) * (((leftVmCpu * vmMemOverhead) - vmMemOverhead) * (vmCpuOverhead / leftVmCpu))) - (vmCpuOverhead / leftVmCpu)) - (leftVmCpu * ((coMem - ((leftVmCpu * vmMemOverhead) - vmMemOverhead)) * ((coMem - (leftVmMem * vmMemOverhead)) - (leftVmMem * vmMemOverhead))))
+Subpopulation 1:
+Evaluated: true
+Fitness: Standardized=169.345526266681 Adjusted=0.005870421266212006 Hits=0
+c style: 
+((VmCPU * ((VmCPU * (NoOfCore / PmUsedMem)) * ((NoOfCore / PmUsedMem) * PmUSedCPU))) / PmUsedMem) * ((NoOfCore - PmUsedMem) * NoOfCore)

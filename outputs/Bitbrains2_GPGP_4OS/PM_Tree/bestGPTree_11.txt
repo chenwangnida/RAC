@@ -1,0 +1,1 @@
+((((VmCPU + PmUSedCPU) - (NoOfCore * pmMem)) + (((PmUsedMem - vmMem) * (PmUsedMem - vmMem)) + (VmCPU + PmUSedCPU))) - vmMem) + (((((PmUsedMem - vmMem) / pmMem) - (vmMem / PmCPU)) + ((pmMem / pmMem) + ((PmUsedMem - vmMem) / pmMem))) + ((((PmUsedMem - vmMem) + (vmMem / PmCPU)) / (VmCPU + PmUSedCPU)) - (VmCPU * PmCPU)))

@@ -1,0 +1,204 @@
+parent.0 = koza.params
+
+# We have two function sets, of class GPFunctionSet
+gp.fs.size = 2
+gp.fs.0 = ec.gp.GPFunctionSet
+gp.fs.1 = ec.gp.GPFunctionSet
+# We'll call the function set "f0"
+gp.fs.0.name = f0
+gp.fs.1.name = f1
+breed.elite.0 = 3
+breed.elite.1 = 3
+#
+gp.tc.size = 2
+gp.tc.0 = ec.gp.GPTreeConstraints
+gp.tc.0.name = tc0
+gp.tc.0.fset= f0
+gp.tc.0.returns = nil
+gp.tc.0.init = ec.gp.koza.HalfBuilder
+
+gp.tc.1 = ec.gp.GPTreeConstraints
+gp.tc.1.name = tc1
+gp.tc.1.fset = f1
+gp.tc.1.returns = nil
+gp.tc.1.init = ec.gp.koza.HalfBuilder
+
+
+# Problem specific parameters
+
+
+#PMENERGY            = 540 # for four core
+# changed to only one core
+VMCPUOverheadRate   = 0.1
+VMMemOverhead       = 200
+
+readFileStartFrom   = 0
+readFileEnd         = 200
+generations = 200
+
+vmConfigPath   = data/bitbrains/4OS/VMConfig/VMConfig_c5New_cores.csv
+pmConfigPath   = data/bitbrains/4OS/PMConfig/PMConfig_Amazon.csv
+osProPath      = data/bitbrains/4OS/OSPro/probability.csv
+osPath         = data/bitbrains/4OS/OSData/testCase
+initEnvPath    = data/bitbrains/4OS/InitEnv/
+trainCasePath   = data/bitbrains/4OS/containerData/testCase
+testCasePath   = data/bitbrains/4OS/Test/containerData/testCase
+testosPath     = data/bitbrains/4OS/Test/OSData/testCase
+
+# Basic evolution parameters
+state = main.MyEvolutionState
+eval = ec.coevolve.MultiPopCoevolutionaryEvaluator
+
+# the number of elite partners selected from the previous generation, for evaluation
+eval.num-elites = 1
+eval.num-prev = 0
+eval.num-shuffled = 0
+eval.num-current = 0
+
+
+# We have nine functions in the function set. They are:
+gp.fs.0.size = 10
+gp.fs.0.func.0 = functions.Add
+gp.fs.0.func.0.nc = nc2
+gp.fs.0.func.1 = functions.Mul
+gp.fs.0.func.1.nc = nc2
+gp.fs.0.func.2 = functions.Sub
+gp.fs.0.func.2.nc = nc2
+gp.fs.0.func.3 = functions.Div
+gp.fs.0.func.3.nc = nc2
+gp.fs.0.func.4 = functions.CoCPU
+gp.fs.0.func.4.nc = nc0
+gp.fs.0.func.5 = functions.CoMem
+gp.fs.0.func.5.nc = nc0
+gp.fs.0.func.6 = functions.LeftVmCPU
+gp.fs.0.func.6.nc = nc0
+gp.fs.0.func.7 = functions.LeftVmMem
+gp.fs.0.func.7.nc = nc0
+gp.fs.0.func.8 = functions.VMCPUOverhead
+gp.fs.0.func.8.nc = nc0
+gp.fs.0.func.9 = functions.VMMEMOverhead
+gp.fs.0.func.9.nc = nc0
+
+
+
+
+gp.fs.1.size = 11
+gp.fs.1.func.0 = functions.Add
+gp.fs.1.func.0.nc = nc2
+gp.fs.1.func.1 = functions.Mul
+gp.fs.1.func.1.nc = nc2
+gp.fs.1.func.2 = functions.Sub
+gp.fs.1.func.2.nc = nc2
+gp.fs.1.func.3 = functions.Div
+gp.fs.1.func.3.nc = nc2
+gp.fs.1.func.4 = functions.VmCPU
+gp.fs.1.func.4.nc = nc0
+gp.fs.1.func.5 = functions.VmMem
+gp.fs.1.func.5.nc = nc0
+gp.fs.1.func.6 = functions.PmCPU
+gp.fs.1.func.6.nc = nc0
+gp.fs.1.func.7 = functions.PmMem
+gp.fs.1.func.7.nc = nc0
+gp.fs.1.func.8 = functions.PmCoreNo
+gp.fs.1.func.8.nc = nc0
+gp.fs.1.func.9 = functions.PmUsedCPU
+gp.fs.1.func.9.nc = nc0 
+gp.fs.1.func.10 = functions.PmUsedMem
+gp.fs.1.func.10.nc = nc0 
+
+# two sub-populations
+pop.subpops = 2
+# pop.default-subpop = 1
+
+pop.subpop.0 = ec.Subpopulation
+pop.subpop.0.size = 512
+# my own GPIndividual
+pop.subpop.0.species = ec.gp.GPSpecies
+pop.subpop.0.species.ind = main.MYGPIndividual
+pop.subpop.0.species.ind.numtrees = 1
+pop.subpop.0.species.ind.tree.0.tc = tc0
+
+
+
+
+pop.subpop.1 = ec.Subpopulation
+pop.subpop.1.size = 512
+# my own GPIndividual
+pop.subpop.1.species = ec.gp.GPSpecies
+pop.subpop.1.species.ind = main.MYGPIndividual
+pop.subpop.1.species.ind.numtrees = 1
+pop.subpop.1.species.ind.tree.0 = ec.gp.GPTree
+pop.subpop.1.species.ind.tree.0.tc = tc1
+
+# my selection choice
+# gp.koza.xover.source.0 = ec.select.FitProportionateSelection
+gp.koza.xover.source.0 = ec.select.TournamentSelection
+gp.koza.xover.source.1 = same
+gp.koza.xover.ns.0 = ec.gp.koza.KozaNodeSelector
+gp.koza.xover.ns.1 = same
+
+
+# mutation source is from FitProportionateSelection
+# gp.koza.mutate.source.0 = ec.select.FitProportionateSelection
+gp.koza.mutate.source.0 = ec.select.TournamentSelection
+
+# Reproduction will use Tournament Selection
+breed.reproduce.source.0 = ec.select.TournamentSelection
+
+# mutation maxdepth
+gp.koza.mutate.maxdepth = 7
+
+pop.subpop.0.species.pipe = ec.breed.MultiBreedingPipeline
+pop.subpop.0.species.pipe.num-sources = 3
+pop.subpop.0.species.pipe.source.0 = ec.gp.koza.CrossoverPipeline
+pop.subpop.0.species.pipe.source.0.prob = 0.8
+pop.subpop.0.species.pipe.source.1 = ec.breed.ReproductionPipeline
+pop.subpop.0.species.pipe.source.1.prob = 0.1
+pop.subpop.0.species.pipe.source.2 = ec.gp.koza.MutationPipeline
+pop.subpop.0.species.pipe.source.2.prob = 0.1
+
+pop.subpop.1.species.fitness = ec.gp.koza.KozaFitness
+pop.subpop.1.duplicate-retries = 100
+pop.subpop.1.species.pipe = ec.breed.MultiBreedingPipeline
+pop.subpop.1.species.pipe.num-sources = 3
+pop.subpop.1.species.pipe.source.0 = ec.gp.koza.CrossoverPipeline
+pop.subpop.1.species.pipe.source.0.prob = 0.8
+pop.subpop.1.species.pipe.source.1 = ec.breed.ReproductionPipeline
+pop.subpop.1.species.pipe.source.1.prob = 0.1
+pop.subpop.1.species.pipe.source.2 = ec.gp.koza.MutationPipeline
+pop.subpop.1.species.pipe.source.2.prob = 0.1
+
+# cross maxdepth = 7
+gp.koza.xover.maxdepth = 7
+
+#
+gp.koza.half.max-depth = 2
+
+# unless he overrided them locally.
+# I am not sure about these two parameters
+gp.koza.grow.min-depth = 5
+gp.koza.grow.max-depth = 5
+
+
+
+
+select.tournament.size = 7
+
+eval.problem = main.ContainerAllocationProblem
+eval.problem.data = main.DoubleData
+
+# full statistics
+#stat = ec.gp.koza.KozaShortStatistics
+#stat.child.0.do-depth = true
+#stat.child.0.do-size = true
+stat.num-children = 1
+stat.child.0 = ec.gp.koza.KozaShortStatistics
+stat.child.0.do-depth = true
+stat.child.0.do-size = true
+#stat.child.0.file = ./out2.stat
+
+# Change the state to
+state = main.MyEvolutionState
+# output statistics to the file
+# the run was started in
+#stat.file                   $out.stat
