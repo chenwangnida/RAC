@@ -197,4 +197,4 @@ To testing, make sure you put right evolved rules in outputs/PM_Tree/bestGPTree_
 
 Note that **SubJustFit_FF** represents that the algorithm contains three rules, 1. Best-Fit with sub rule for allocating containers to VMs 2. JustFit for VM creation, justFit finds the smallest VM for the container to create 3. First-Fit for VM allocation
 
-3. The output file, out.stat, records 200 rows (i.e., the number of generations) of space-separated values. For example,
+3. The output file, out.stat, records 200 rows (i.e., the number of generations) of space-separated values.
