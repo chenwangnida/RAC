@@ -1,7 +1,8 @@
 # Project Title
 This repo implements paper: Energy-Aware Dynamic Resource Allocation in Container-based Clouds via Cooperative Coevolution Genetic Programming.
 
-For details of the paper, please see EvoApplication 2023 (Accetped and appear soon)
+For details of the paper, please see EvoApplication 2023 (is accetped and appear soon)
+
 '''
 @inproceedings{wang2023energy,
   title={Energy-Aware Dynamic Resource Allocation in Container-based Clouds via Cooperative Coevolution Genetic Programming},
